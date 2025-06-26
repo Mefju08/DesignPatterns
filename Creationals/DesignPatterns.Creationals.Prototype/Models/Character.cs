@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.Creationals.Prototype.Models
+﻿namespace DesignPatterns.Creationals.Prototype.Models
 {
     internal sealed class Character
     {
@@ -28,8 +22,8 @@ namespace DesignPatterns.Creationals.Prototype.Models
         {
             var character = (Character)this.MemberwiseClone();
             character.Id = Guid.CreateVersion7();
-            character.Skills = new List<string>( Skills);
-            
+            character.Skills = new List<string>(Skills);
+
             return character;
         }
 
@@ -37,7 +31,7 @@ namespace DesignPatterns.Creationals.Prototype.Models
         {
             Console.WriteLine($"Id: {Id} | [{Class}] {Name} | HP: {Health}, Mana: {Mana}");
             Console.WriteLine("Skills: " + string.Join(", ", Skills));
-            Console.WriteLine(  );
+            Console.WriteLine();
         }
     }
 }

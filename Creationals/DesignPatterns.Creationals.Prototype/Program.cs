@@ -6,7 +6,7 @@ namespace DesignPatterns.Creationals.Prototype
     {
         static void Main(string[] args)
         {
-            var character = new Character("Edd", "Warrior", 100, 
+            var character = new Character("Edd", "Warrior", 100,
                 200, new List<string>()
                 {
                    "attack"
